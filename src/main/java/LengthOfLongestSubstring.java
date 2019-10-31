@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by jingjie3 on 2018/4/11.
+ * Created by jingjie on 2018/4/11.
  */
 public class LengthOfLongestSubstring {
 

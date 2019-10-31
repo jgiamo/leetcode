@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Created by jingjie3 on 2018/4/10.
+ * Created by jingjie on 2018/4/10.
  */
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {

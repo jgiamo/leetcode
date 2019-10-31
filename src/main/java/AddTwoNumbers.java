@@ -1,7 +1,7 @@
 import java.util.List;
 
 /**
- * Created by jingjie3 on 2018/4/11.
+ * Created by jingjie on 2018/4/11.
  */
 public class AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
