@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * easy 爬楼梯，一次爬1或者2阶梯，总共有多少种爬法
+ * 求子集
  */
 public class Subsets {
 
