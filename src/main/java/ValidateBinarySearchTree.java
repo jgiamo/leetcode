@@ -14,7 +14,6 @@ public class ValidateBinarySearchTree {
         int val;
         TreeNode left;
         TreeNode right;
-        boolean visited;
 
         TreeNode(int x) {
             val = x;
@@ -22,7 +21,27 @@ public class ValidateBinarySearchTree {
     }
 
     public boolean isValidBST(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        return trace(root.left,root.val,null) && trace(root.right,null,root.val);
+    }
 
+    public boolean trace(TreeNode root,Integer leftTreeMinValue, Integer rightTreeMaxValue){
+        if(root == null){
+            return true;
+        }
+        if((leftTreeMinValue!= null && root.val >= leftTreeMinValue) || (rightTreeMaxValue != null && root.val <= rightTreeMaxValue)){
+            return false;
+        }
+        if(!trace(root.left,root.val,rightTreeMaxValue)){
+            return false;
+        }
+        if(!trace(root.right,leftTreeMinValue,root.val)){
+            return false;
+        }
+
+        return true;
     }
 
 
